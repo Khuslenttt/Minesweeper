@@ -60,7 +60,7 @@ public void displayLosingMessage()
 {
     // Reveal all mines
     for (MSButton mine : mines) {
-        mine.setLabel("YOU LOST");
+        mine.setLabel("KABOOM");
         mine.clicked = true;
     }
 
@@ -77,7 +77,7 @@ public void displayWinningMessage()
 {
     for (int r = 0; r < NUM_ROWS; r++) {
         for (int c = 0; c < NUM_COLS; c++) {
-            buttons[r][c].setLabel("YOU ARE A WINNER!");  // Winning smiley face
+            buttons[r][c].setLabel("WINNER!");  // Winning smiley face
         }
     }
 }
